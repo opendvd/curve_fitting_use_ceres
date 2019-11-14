@@ -8,8 +8,6 @@ find_package(Ceres REQUIRED)
 include_directories(${CERES_INCLUDE_DIRS})
 message(STATUS "Ceres localization is: ${CERES_INCLUDE_DIRS}")
 
-include_directories( "/usr/include/eigen3" )
-
 set(OpenCV_DIR /opt/ros/kinetic/share/OpenCV-3.3.1-dev)
 find_package(OpenCV REQUIRED)
 include_directories(${OpenCV_DIRS})
