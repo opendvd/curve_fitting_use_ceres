@@ -23,3 +23,9 @@ target_link_libraries(ceres_curve_fitting_analytic_diff ${CERES_LIBRARIES} ${Ope
 
 add_executable(ceres_curve_fitting_loss_function ceres_curve_fitting_loss_function.cpp)
 target_link_libraries(ceres_curve_fitting_loss_function ${CERES_LIBRARIES} ${OpenCV_LIBS})
+
+add_executable(powell_auto_diff powell_auto_diff.cpp)
+target_link_libraries(powell_auto_diff ${CERES_LIBRARIES})
+
+add_executable(powell_analytic_diff powell_analytic_diff.cpp)
+target_link_libraries(powell_analytic_diff ${CERES_LIBRARIES})
