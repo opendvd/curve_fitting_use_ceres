@@ -1,3 +1,11 @@
+### 0. Function
+
+$$
+y=exp(ax^2+bx+c)
+$$
+
+
+
 ### 1. Auto Derivatives
 
 
