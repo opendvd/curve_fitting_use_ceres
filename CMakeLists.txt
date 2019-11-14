@@ -29,3 +29,9 @@ target_link_libraries(powell_auto_diff ${CERES_LIBRARIES})
 
 add_executable(powell_analytic_diff powell_analytic_diff.cpp)
 target_link_libraries(powell_analytic_diff ${CERES_LIBRARIES})
+
+add_executable(rat43_analytic_diff rat43_analytic_diff.cpp)
+target_link_libraries(rat43_analytic_diff ${CERES_LIBRARIES} ${OpenCV_LIBS})
+
+add_executable(rat43_auto_diff rat43_auto_diff.cpp)
+target_link_libraries(rat43_auto_diff ${CERES_LIBRARIES} ${OpenCV_LIBS})
