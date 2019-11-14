@@ -20,3 +20,6 @@ target_link_libraries(ceres_curve_fitting_numeric_diff ${CERES_LIBRARIES} ${Open
 
 add_executable(ceres_curve_fitting_analytic_diff ceres_curve_fitting_analytic_diff.cpp)
 target_link_libraries(ceres_curve_fitting_analytic_diff ${CERES_LIBRARIES} ${OpenCV_LIBS})
+
+add_executable(ceres_curve_fitting_loss_function ceres_curve_fitting_loss_function.cpp)
+target_link_libraries(ceres_curve_fitting_loss_function ${CERES_LIBRARIES} ${OpenCV_LIBS})

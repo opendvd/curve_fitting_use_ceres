@@ -54,7 +54,8 @@ int main(int argc, char** argv) {
     // create problem
     ceres::Problem problem;
     for (int i = 0; i < N; i++) {
-        curve_factor *cost_function = new curve_factor(x_data[i], y_data[i]);
+//        curve_factor *cost_function = new curve_factor(x_data[i], y_data[i]); // or
+        ceres::CostFunction *cost_function = new curve_factor(x_data[i], y_data[i]); // or
         problem.AddResidualBlock(cost_function, NULL, abc);
     }
 
