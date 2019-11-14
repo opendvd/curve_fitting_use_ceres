@@ -45,8 +45,8 @@ public:
 
         residuals[0] = (x2 - 2.0 * x3) * (x2 - 2.0 * x3);
         if(jacobians) {
-            jacobians[0][0] = 2.0 * (x2 - 2.0 * x3);
-            jacobians[0][1] = -4.0 * (x2 - 2.0 * x3);
+            jacobians[0][0] = 2.0 * (x2 - 2.0 * x3); // It should be [0][0], ranter than [0][1]
+            jacobians[0][1] = -4.0 * (x2 - 2.0 * x3); // It should be [0][1], ranter than [0][2]
         }
         return true;
 
